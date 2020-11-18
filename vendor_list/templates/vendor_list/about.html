@@ -1,0 +1,247 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 16.5%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+li {
+  list-style: none;
+}
+
+.faq p {
+  font-weight: bold;
+	font-size: 20px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.contato {
+  padding: 50px;
+  text-align: center;
+  background-color: #094978;
+  color: white;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #094978;
+  color: white;
+}
+
+.faq {
+  padding: 50px;
+  text-align: center;
+  background-color: #094978;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1>Sobre nós</h1>
+  <p>Somos as PythonGirls responsáveis pelo Magalu Transforma.</p>
+  <p>Com o Magalu Transforma queremos ajudar as pessoas afetas pela pandemia a recuperarem seus negócios e transformarem suas vidas.</p>
+</div>
+
+<h2 style="text-align:center">Nosso time</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">			 
+      <img src="{% static 'vendor_list/assets/bru.jpg' %}" alt="Bruna" style="width:50%">
+      <div class="container">
+        <h2>Bruna Cassol dos Santos</h2>
+        <p class="title">PO</p>
+        <p>Possui Licenciatura em matemática. Mestrado em Matemática Aplicada e Doutorado em andamento também em Matemática Aplicada com ênfase na modelagem de doenças infecciosas. Sou entusiasta por diferentes aplicações e modelagem. </p>
+        <p>bruna.cassol@hotmail.com</p>
+        <p><button class="button">Contato</button></p>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'vendor_list/assets/michele.jpeg' %}" alt="Michelle" style="width:50%">
+      <div class="container">
+        <h2>Michelle Bruna Santana Santos</h2>
+        <p class="title">PO</p>
+        <p>Ex estudante de medicina, formada em administração e atualmente cursando analise e desenvolvimento de sistemas. Possui experiência na área de processos, projetos e desenvolvimento ABAP. Apaixonada por dados.</p>
+        <p>michelle_bruna@hotmail.com</p>
+        <p><button class="button">Contato</button></p>
+      </div>
+    </div>
+  </div>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'vendor_list/assets/jad.jpeg' %}" alt="Jadna" style="width:50%">
+      <div class="container">
+        <h2>Jadna Silva</h2>
+        <p class="title">PO</p>
+        <p>Estudante de Análise e Desenvolvimento de Sistemas. Estagiária de Arquitetura de Software no Grupo Recovery.</p>
+        <p>jadnajesus7@gmail.com</p>
+        <p><button class="button">Contato</button></p>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'vendor_list/assets/stef.jpeg' %}" alt="Steffane" style="width:50%">
+      <div class="container">
+        <h2>Steffane Castro</h2>
+        <p class="title">PO</p>
+        <p>Acadêmica do curso de Ciência da Computação pelo - IFMA. Atualmente participo de dois o primeiro é o grupo de diversidade GEATEC/IFMA que desenvolve pesquisas e trabalhos acadêmicos sobre o Ensino de Música, Ensino de Arte, Educação Profissional e Tecnologias Digitais na Educação.</p>
+        <p>steffane.cass@gmail.com</p>
+        <p><button class="button">Contato</button></p>
+      </div>
+    </div>
+  </div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="{% static 'vendor_list/assets/schiu.jpeg' %}" alt="Shirlei" style="width:50%">
+      <div class="container">
+        <h2>Shirlei Freitas</h2>
+        <p class="title">Art Director</p>
+        <p>Sou a Schiu, formada Jornalismo e Desenvolvedora Web FullStack por paixão e dedicação. Atuei na área de Design e MKT digital por quase 3 anos. Participei de um bootcamp de mais de 1000 horas de programação em Javascript | React.js | Node.js | Typescript | MySQL.</p>
+        <p>schiufreitas@gmail.com</p>
+        <p><button class="button">Contato</button></p>
+      </div>
+    </div>
+  </div>
+ 
+<div class="row">
+ <div class="column">
+    <div class="card">
+      <img src="{% static 'vendor_list/assets/dynnah.jpeg' %}" alt="Dynnah" style="width:50%">
+      <div class="container">
+        <h2>Dynnah Hanna</h2>
+        <p class="title">Designer</p>
+        <p>Formada em Eletrotécnica e Cursando Sistemas para Internet. Atualmente trabalhando como Desenvolvedora IHC Júnior.</p>
+        <p>eudynnah@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div> 
+ 
+
+
+
+<div class="faq">
+  <h1>Questões Frequentes</h1>
+
+
+<li>
+<p>O que é o Magalu Transforma?</p>
+<div class = "answer">É um website que permite que você venda seus produtos dentro do site do Magazine Luiza. Nosso marketplace tem a vantagem de ser além de fornecer acesso a uma plataforma digital, além de contar com pontos físicos, pois além das vendas onlines, todo o site é integrado às mais de mil lojas do Magalu no Brasil.</div> 
+</li>
+
+<li>
+<p>Como faço o meu cadastro no Magalu Transforma?</p>
+<div class="answer">São 3 passos bem simples. PASSO 1: Faça o seu cadastro. PASSO 2: Quais são os seus contatos? PASSO 3: Preencha seus dados financeiros. </div>
+</li>
+
+<li>
+<p>Quais são as vantagens do marketplace para o meu negócio?</p>
+<div class="answer"> Mesmo antes da pandemia o e-commerce tem ganhado popularidade e agora, ainda mais, pois possibilita uma oportunidade de negócio integrado às mais de mil lojas do Magalu no Brasil; Magalu Entregas, programa próprio do Magalu com benefícios nos fretes; A porcentagem da comissão é descontado apenas do valor do produto, não consideramos o valor do frete.</div>
+</li>
+
+<li>
+<p>O que eu preciso ter para ser um parceiro Magalu Transforma?</p>
+<div class="answer">Ter, no mínimo, 3 meses de abertura de CNPJ; 
+Emitir notas fiscais eletrônicas; 
+Comercializar produtos que não estão na nossa lista de Inegociáveis
+.</div>
+</li>
+
+</div>
+
+<body>
+
+
+<div class="contato">
+
+    
+    <h1 class="fcf-h3">Contato</h1>
+		 <p>Para quaisquer dúvidas, sugestões, reclamações ou elogios, favor contactar pythongirls@gmail.com</p>
+
+</div>
+
+</body>
+
+
+</body>
+
+
+</html>
+

@@ -1,0 +1,135 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'vendor_list/css/home.css' %}" />
+	
+    
+    <title>Magalu Transforma</title>
+</head>
+<body>
+    <!-- Menu -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'vendor_list/assets/magalutransforma.png' %}" class="img-icon">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#" id="link">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#" id="link">Products</a>
+            <a class="nav-item nav-link" href="#" id="link">Courses</a>
+            <a class="nav-item nav-link" href="#" id="link">About Us</a>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Banner apresentação -->
+      <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Magalu Transforma</h1>
+            <h3>Vantagens para você!</h3>
+            <p>Magalu Transforma é parte do projeto de expansão do marketplace do Magazine Luiza <br>Nasceu da necessidade de apoiar milhares de brasileiros que perderam emprego devido a pandemia do Coronavírus</p>
+        </div>
+      </div>
+
+    <!--  Objetivos  -->  
+
+    <div class="container text-center" id="objetivos">
+        <h4 class="section-title">
+          Conheça as vantagens de ser nosso parceiro
+        </h4>
+        <p>Nosso objetivo é transformar a sua vida através da possibilidade de aumentar a sua renda e te ajudar a adquirir qualificação profissional</p>
+        <h4 id="lastline">Como faremos isso?</h4>
+
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="section">
+             <img
+                 src="{% static 'vendor_list/assets/bolsa-de-compras.png' %}"
+                alt="Produto" 
+              />
+            </div>
+            <h5>
+                Você cadastra seus produtos no nosso site
+            </h5>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="section">
+             <img
+                 src="{% static 'vendor_list/assets/pontuacao.png' %}"
+                alt="Pontuação" 
+              />
+            </div>
+            <h5>
+                Para cada venda realizada você ganha uma pontuação de acordo com o valor da venda
+            </h5>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="section">
+             <img
+                 src="{% static 'vendor_list/assets/historia.png' %}"
+                alt="Curso" 
+              /> 
+            </div>
+            <h5>
+            A cada 100 pontos um curso de profissionalização é liberado para você
+            </h5>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- linha separação -->
+
+    <hr>
+
+    <!-- Vantagens -->
+
+    <div class="container" id="vantagens">
+        <div class="row d-flex align-items-center">
+          <div class="col-12 col-lg-4">
+            <h3 class="section-title">Vantagens do Magalu Transforma</h3>
+          </div>
+
+          <div class="col-12 col-lg-8">
+            <p class="section-text">
+                <ul>
+                    <li>Melhorar o seu faturamento</li>
+                    <li>Oferecer capacitação profissional e educação financeira para você</li>
+                    <li>Criar uma experiencia positiva, através de uma plataforma rápida, fácil e segura de comercialização</li>
+                    <li>Unificar em um só local a maior variedade possível de produtos</li>
+                 </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    
+      
+
+     <!-- Footer -->
+
+    <footer class="page-footer">
+      <div class="footer-copyright text-center py-3">
+          © 2020 Copyright: Magalu Transforma</a>
+      </div>
+    </footer>
+  
+  
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
