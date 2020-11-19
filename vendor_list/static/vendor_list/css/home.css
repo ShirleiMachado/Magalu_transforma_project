@@ -1,0 +1,123 @@
+body {
+	background: whitesmoke;
+}
+
+/* menu */
+
+.navbar {
+	box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+    background-color:  #094978;
+}
+
+.navbar a {
+	color: #f2f2f2;	
+}
+
+.navbar a:hover {
+	font-weight: bold;
+	color: #f2f2f2;
+}
+
+#link {
+	padding-right: 50px;
+}
+
+.img-icon {
+	padding-left: 150px;
+	padding-right: 50px;
+	width: 400px;
+}
+
+/* banner */
+
+.jumbotron {
+	background:#094978;
+	padding-top: 100px;
+	border-radius: 0 !important;
+	box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+}
+
+.jumbotron h1 {
+	font-family: 'Roboto', sans-serif;
+	color: whitesmoke;
+	text-align: center;
+	font-size: 4.5em;
+	letter-spacing: -.5px;
+}
+
+.jumbotron h3 {
+	font-family: 'Futura', sans-serif;
+	color: whitesmoke;
+	margin: 24px auto 16px;
+}
+
+.jumbotron p {
+	font-family: 'Roboto', sans-serif;
+	color: whitesmoke;
+	font-size: 16px;
+	font-weight: 400;
+    letter-spacing: .2px;
+}
+
+/* Objetivos */
+
+#objetivos {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.row {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	justify-content: center;
+}
+
+
+img {
+	width: 100px;
+	padding-bottom: 15px;
+}
+
+.container h4 {
+	padding-bottom: 10px;
+	color: #404040;
+}
+
+.row h5 {
+	color: #8c8c8C;
+}
+
+#lastline {
+	padding-bottom: 50px;
+}
+
+/* linha de separação */
+
+hr {
+	height:1px;
+	width: 95%;
+	border-width:0;
+	background-color: #8c8c8C;
+}
+
+/* vantagens */
+
+#vantagens {
+	padding-top: 20px;
+	padding-bottom: 30px;
+}
+
+ul {
+	list-style: none;	
+}
+
+ul li:before {
+	content: '✔ ';
+  }
+
+/* footer */
+
+.page-footer {
+	background-color: #094978;
+	color: whitesmoke;
+	text-align: center;
+  }
