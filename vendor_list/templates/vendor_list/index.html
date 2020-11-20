@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Sua Lista de Compras</title>
+		<title>Sua Lista de Produtos</title>
 
 		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 
@@ -24,7 +24,7 @@
 
 			<div class="row">
 				<div class="col-lg-4 col-lg-offset-4" id="content">
-					<h2>Sua Lista de Compras <i class="fas fa-pencil-alt"></i>
+					<h2>Sua Lista de Produtos <i class="fas fa-pencil-alt"></i>
 
 </h2>
 
@@ -34,7 +34,7 @@
 							<div class="input-group">
 								{{ form.text }}
 							  <span class="input-group-btn">
-								  <button type="submit" class="btn btn-success" id="add-btn">Comprar<i class="fas fa-check-circle"></i>
+								  <button type="submit" class="btn btn-success" id="add-btn">Adicionar Produtos<i class="fas fa-check-circle"></i>
 
 </button>
 							  </span>
@@ -47,7 +47,7 @@
 							<div class="btn-toolbar">
 								<a href="{% url 'vendor_list-delete' %}">
 									<button type="button" class="btn btn-danger btn-block">
-										<i class="fas fa-trash-alt"></i> Delete Itens Comprados
+										<i class="fas fa-trash-alt"></i> Delete Produtos Comprados
 									</button>
 								</a>
 								<a href="/delete_all">

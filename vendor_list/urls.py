@@ -18,10 +18,12 @@ from django.urls import path, include
 from.import views
 
 urlpatterns = [
-    path('', views.index, name='vendor_list-index'),
-		path('add/', views.add_new_item, name='vendor_list-add'),
-		 path('bought/<item_id>', views.bought_item, name='vendor_list-bought'),
-		 path('delete_item/', views.delete_item, name='vendor_list-delete'),
-		 path('delete_all/', views.delete_all, name='vendor_list-delete_all'),
+    path('', views.home, name='vendor_list-home'), 
+    path('about/', views.about, name='vendor_list-about'),    
+    path('products/', views.index, name='vendor_list-index'),
+	path('add/', views.add_new_item, name='vendor_list-add'),
+	path('bought/<item_id>', views.bought_item, name='vendor_list-bought'),
+	path('delete_item/', views.delete_item, name='vendor_list-delete'),
+	path('delete_all/', views.delete_all, name='vendor_list-delete_all'),
 ]
 		
