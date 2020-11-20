@@ -34,3 +34,9 @@ def delete_item(request):
 def delete_all(request):
 	Vendor_List.objects.all().delete()
 	return redirect('vendor_list-index')
+
+def home(request):
+	return render(request, "vendor_list/home.html")
+
+def about(request):
+	return render(request, "vendor_list/about.html")
