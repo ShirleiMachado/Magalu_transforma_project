@@ -29,20 +29,12 @@ Nasceu da necessidade de apoiar milhares de brasileiros que perderam emprego dev
 
     http://localhost:8000/home
     
-    ![image](https://user-images.githubusercontent.com/62224847/99856235-4ab60200-2b67-11eb-8f18-deac0449648c.png)
-
     http://localhost:8000/product 
-    
-    ![image](https://user-images.githubusercontent.com/62224847/99856414-b5673d80-2b67-11eb-9d76-5ba01ef515c1.png)
-
+        
     http://localhost:8000/course
     
-    ![image](https://user-images.githubusercontent.com/62224847/99856720-5c4bd980-2b68-11eb-8831-55b71d80156e.png)
-    
     http://localhost:8000/about
-    
-    ![image](https://user-images.githubusercontent.com/62224847/99856679-41796500-2b68-11eb-91a1-9c64b8cacc54.png)
-    
+         
     http://localhost:8000/login
     
     
