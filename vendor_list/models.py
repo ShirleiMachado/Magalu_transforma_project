@@ -15,6 +15,9 @@ from django.contrib.auth.models import User
 class Vendor_List(models.Model):
 	complete = models.BooleanField(default=False) #quando for True vc nao pode comprar mais
 	item = models.CharField(max_length=100)
+	description = models.TextField(default = "")
+	price = models.DecimalField(decimal_places = 2, max_digits = 20, default = 100.00)
+	stock = models.IntegerField(null=True)
 	
 	def __str__(self):
 		return self.item #nao esta alterando com o nome do produto
