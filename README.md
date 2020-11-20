@@ -1,6 +1,9 @@
 # ![image](https://user-images.githubusercontent.com/62224847/99605034-9b9ded00-29e5-11eb-9586-ec1f9d923454.png)
 
-Aplicação onde é possível um vendedor cadastrar, atualizar e buscar produtos, consultar estoque e marcar produtos inativos.
+##Vantagens para você!
+
+Magalu Transforma é parte do projeto de expansão do marketplace do Magazine Luiza
+Nasceu da necessidade de apoiar milhares de brasileiros que perderam emprego devido a pandemia do Coronavírus
 
 
 ## ⚙️ Instalação
@@ -26,9 +29,9 @@ Aplicação onde é possível um vendedor cadastrar, atualizar e buscar produtos
 
     http://localhost:8000/
 
-    http://localhost:8000/sellers  
+    http://localhost:8000/ 
 
-    http://localhost:8000/sellers/register
+    http://localhost:8000/
     
     
 ## 🛠️ Construído com
