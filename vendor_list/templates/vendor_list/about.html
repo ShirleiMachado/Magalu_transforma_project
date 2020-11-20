@@ -3,7 +3,35 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
+/* menu */
+
+.navbar {
+	box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+    background-color:  #094978;
+}
+
+.navbar a {
+	color: #f2f2f2;	
+}
+
+.navbar a:hover {
+	font-weight: bold;
+	color: #f2f2f2;
+}
+
+#link {
+	padding-right: 50px;
+}
+
+.img-icon {
+	padding-left: 150px;
+	padding-right: 50px;
+	width: 400px;
+}
+
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -34,6 +62,9 @@ li {
   list-style: none;
 }
 
+p {
+  font-size: 12px;  
+}
 .faq p {
   font-weight: bold;
 	font-size: 20px;
@@ -74,12 +105,14 @@ li {
 
 .container {
   padding: 0 16px;
+  
 }
 
 .container::after, .row::after {
   content: "";
   clear: both;
   display: table;
+
 }
 
 .title {
@@ -96,7 +129,9 @@ li {
   text-align: center;
   cursor: pointer;
   width: 100%;
-}
+  position:inherit;
+  margin-top: auto;
+  }
 
 .button:hover {
   background-color: #555;
@@ -121,6 +156,7 @@ hr {
 </head>
 <body>
 
+
 <div class="about-section">
   <h1>Sobre nós</h1>
   <p>Somos as PythonGirls responsáveis pelo Magalu Transforma.</p>
@@ -130,14 +166,14 @@ hr {
 <h2 style="text-align:center">Nosso time</h2>
 <div class="row">
   <div class="column">
-    <div class="card">			 
+    <div class="card" style="width: 14rem; height: 24rem;">			 
       <img src="{% static 'vendor_list/assets/bruna.jpeg' %}" alt="Bruna">
       <div class="container">
         <h2>Bruna Cassol dos Santos</h2>
         <p class="title">Dev</p>
-        <p>Possui Licenciatura em matemática. Mestrado em Matemática Aplicada e Doutorado em andamento também em Matemática Aplicada com ênfase na modelagem de doenças infecciosas. Sou entusiasta por diferentes aplicações e modelagem, modelos de Machine Learning e dados. </p>
+        <p>Possui Licenciatura em matemática. Mestrado em Matemática Aplicada e Doutorado em andamento também em Matemática Aplicada com ênfase na modelagem de doenças. Sou entusiasta por diferentes aplicações e modelagem, modelos de Machine Learning e dados. </p>
         <p>bruna.cassol@hotmail.com</p>
-        <p><button class="button">Contato</button></p>
+        
       </div>
 </div>
     </div>
@@ -145,14 +181,13 @@ hr {
 
 <div class="row">
  <div class="column">
-    <div class="card">
+    <div class="card" style="width: 14rem; height: 24rem;">
       <img src="{% static 'vendor_list/assets/dynnah.jpeg' %}" alt="Dynnah">
       <div class="container">
         <h2>Dynnah Hanna</h2>
         <p class="title">Dev</p>
-        <p>Possui formação em eletrotécnica e cursando Sistemas para Internet. Entusiasta da pesquisa, faz parte do projeto de desenvolvimento de uma plataforma de visualização de dados de violência contra a mulher no Brasil. Atualmente trabalhando como Desenvolvedora IHC Júnior em um projeto de acessibilidade entitulado Cine Modelo..</p>
+        <p>Possui formação em eletrotécnica e cursando Sistemas para Internet. Entusiasta da pesquisa, faz parte do projeto de desenvolvimento de uma plataforma de visualização de dados de violência contra a mulher no Brasil. Atualmente trabalhando como Desenvolvedora IHC Júnior em um projeto de acessibilidade entitulado Cine Modelo.</p>
         <p>eudynnah@gmail.com</p>
-        <p><button class="button">Contact</button></p>
       </div>
     </div>
   </div>
@@ -160,14 +195,14 @@ hr {
 
 <div class="row">
   <div class="column">
-    <div class="card">
+    <div class="card" style="width: 14rem; height: 24rem;">
       <img src="{% static 'vendor_list/assets/jadna.jpeg' %}" alt="Jadna">
       <div class="container">
         <h2>Jadna Silva</h2>
         <p class="title">Dev</p>
         <p>Estudante de Análise e Desenvolvimento de Sistemas. Estagiária de Arquitetura de Software no Grupo Recovery. Sou apaixonada por tecnologia e inovação, tenho grande interesse por soluções tecnológicas. E todos os dias tenho buscado aprender e aperfeiçoar os meus conhecimentos.</p>
         <p>jadnajesus7@gmail.com</p>
-        <p><button class="button">Contato</button></p>
+        
       </div>
     </div>
   </div>
@@ -175,28 +210,28 @@ hr {
 
 <div class="row">
   <div class="column">
-    <div class="card">
+    <div class="card" style="width: 14rem; height: 24rem;">
       <img src="{% static 'vendor_list/assets/michelle.jpeg' %}" alt="Michelle">
       <div class="container">
         <h2>Michelle Bruna Santana Santos</h2>
         <p class="title">Dev</p>
         <p>Ex estudante de medicina, formada em administração e atualmente cursando analise e desenvolvimento de sistemas. Possui experiência na área de processos, projetos e desenvolvimento ABAP. Apaixonada por dados.</p>
         <p>michelle_bruna@hotmail.com</p>
-        <p><button class="button">Contato</button></p>
+        
       </div>
     </div>
   </div>
 
 <div class="row">
   <div class="column">
-    <div class="card">
+    <div class="card" style="width: 14rem; height: 24rem;">
       <img src="{% static 'vendor_list/assets/shirlei.jpeg' %}" alt="Shirlei">
       <div class="container">
         <h2>Shirlei Freitas</h2>
         <p class="title">Dev</p>
         <p>Sou a Schiu, formada Jornalismo e Desenvolvedora Web FullStack por paixão e dedicação. Atuei na área de Design e MKT digital por quase 3 anos. Participei de um bootcamp de mais de 1000 horas de programação em Javascript | React.js | Node.js | Typescript | MySQL.</p>
         <p>schiufreitas@gmail.com</p>
-        <p><button class="button">Contato</button></p>
+        
       </div>
     </div>
   </div>
@@ -205,14 +240,14 @@ hr {
 
 <div class="row">
   <div class="column">
-    <div class="card">
+    <div class="card" style="width: 14rem; height: 24rem;">
       <img src="{% static 'vendor_list/assets/steffane.jpeg' %}" alt="Steffane">
       <div class="container">
         <h2>Steffane Castro</h2>
         <p class="title">Dev</p>
         <p>Acadêmica do curso de Ciência da Computação pelo IFMA. Atualmente participo de dois projetos. O primeiro é o grupo de diversidade, que desenvolve pesquisas sobre o Ensino de Música, Ensino de Arte, Educação Profissional e Tecnologias Digitais na Educação e o segundo é o Projeto Mermãs Digitais.</p>
         <p>steffane.cass@gmail.com</p>
-        <p><button class="button">Contato</button></p>
+       
       </div>
     </div>
   </div>
