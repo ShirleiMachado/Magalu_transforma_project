@@ -1,0 +1,131 @@
+body {
+	background: whitesmoke;
+}
+
+/* menu */
+
+.navbar {
+	box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+    background-color:  #094978;
+}
+
+.navbar a {
+	color: #f2f2f2;	
+}
+
+.navbar a:hover {
+	font-weight: bold;
+	color: #f2f2f2;
+}
+
+#link {
+	padding-right: 50px;
+}
+
+.img-icon {
+	padding-left: 150px;
+	padding-right: 50px;
+	width: 400px;
+}
+
+/* banner */
+
+.jumbotron {
+	background:#094978;
+	padding-top: 100px;
+	border-radius: 0 !important;
+	box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+}
+
+.jumbotron h1 {
+	font-family: 'Roboto', sans-serif;
+	color: whitesmoke;
+	text-align: center;
+	font-size: 4.5em;
+	letter-spacing: -.5px;
+}
+
+.jumbotron h3 {
+	font-family: 'Futura', sans-serif;
+	color: whitesmoke;
+	margin: 24px auto 16px;
+}
+
+.jumbotron p {
+	font-family: 'Roboto', sans-serif;
+	color: whitesmoke;
+	font-size: 16px;
+	font-weight: 400;
+    letter-spacing: .2px;
+}
+
+/* cadastro de produtos */
+
+#content {
+    margin-left: 450px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#content h2 {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.form-group {
+    text-align: center;
+}
+
+#add-btn {
+    margin-top: 10px;
+    background-color: #094978 ;
+    border-color:  #094978;
+}
+
+#title-produto {
+    margin-left: 8.9rem;
+    padding-top: 5px;
+}
+
+#title {
+    margin-left: 11rem;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+#title-vendor {
+    margin-left: 10.5rem;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+#id_item {
+    padding-bottom: 10px;
+    margin-left: 100px;
+}
+
+#id_description {
+    padding-bottom: 10px;
+    margin-left: 100px;
+}
+
+#id_price {
+    margin-left: 100px;
+}
+
+#id_stock {
+    margin-left: 100px;
+}
+
+#id_seller {
+    margin-left: 175px;
+    margin-bottom: 10px;
+}
+    
+/* footer */
+
+.page-footer {
+	background-color: #094978;
+	color: whitesmoke;
+	text-align: center;
+  }

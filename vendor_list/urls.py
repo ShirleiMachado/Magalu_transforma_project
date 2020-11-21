@@ -19,7 +19,8 @@ from.import views
 
 urlpatterns = [
     path('', views.home, name='vendor_list-home'), 
-    path('about/', views.about, name='vendor_list-about'),    
+    path('about/', views.about, name='vendor_list-about'),
+    path('courses/', views.courses, name='vendor_list-courses'),    
     path('products/', views.index, name='vendor_list-index'),
 	path('add/', views.add_new_item, name='vendor_list-add'),
     path('update/', views.update_product, name='vendor_list-update'),
