@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sua Lista de Produtos</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="{% static 'vendor_list/css/flatly.min.css' %}" />
+		<link rel="stylesheet" href="{% static 'vendor_list/css/styles.css' %}" />
+		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+
+
+	</head>
+	<body>
+		<table>
+			<thead>
+				<tr>
+					<th>Item</th>
+					<th>Descrição</th>
+				</tr>
+			</thead>
+			<tbody>
+				{%for product in products%}
+				<tr>
+					<td>
+						{{product.item}}
+					</td>
+					<td>
+						{{product.description}}
+					</td>
+				</tr>
+				{%endfor%}
+			</tbody>
+		</table>
+				
+	</body>
+</html>
