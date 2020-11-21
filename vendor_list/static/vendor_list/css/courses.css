@@ -1,0 +1,112 @@
+body {
+	background: whitesmoke;
+}
+
+/* menu */
+
+.navbar {
+	box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+    background-color:  #094978;
+}
+
+.navbar a {
+	color: #f2f2f2;	
+}
+
+.navbar a:hover {
+	font-weight: bold;
+	color: #f2f2f2;
+}
+
+#link {
+	padding-right: 50px;
+}
+
+.img-icon {
+	padding-left: 150px;
+	padding-right: 50px;
+	width: 400px;
+}
+
+/* banner */
+
+.jumbotron {
+	background:#094978;
+	padding-top: 100px;
+	border-radius: 0 !important;
+	box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+}
+
+.jumbotron h1 {
+	font-family: 'Roboto', sans-serif;
+	color: whitesmoke;
+	text-align: center;
+	font-size: 3.5em;
+	letter-spacing: -.5px;
+}
+
+.jumbotron h3 {
+	font-family: 'Futura', sans-serif;
+    color: whitesmoke;
+    font-size: 1.5em;
+	margin: 24px auto 16px;
+}
+
+
+/* Cards Curso */
+
+.row {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: center;
+}
+
+.card {
+    width: 18rem;
+    align-content: center;
+    margin-right: 65px;    
+}
+
+.card h5  {
+	font-family: 'Futura', sans-serif;
+    font-size: 1.5em;
+	text-align: center;
+}
+
+.card p  {
+	font-family: 'Futura', sans-serif;
+    font-size: 0.8em;
+	text-align: center;
+}
+
+
+
+/* linha de separação */
+
+hr {
+	height:1px;
+	width: 95%;
+	border-width:0;
+	background-color: #8c8c8C;
+}
+
+#final {
+	height:1px;
+	width: 95%;
+	border-width:0;
+    background-color: #8c8c8C;
+    margin-bottom: 30px;
+}
+
+#button {
+    background-color:#094978;
+    border-color:  #007bff;
+}
+
+/* footer */
+
+.page-footer {
+	background-color: #094978;
+	color: whitesmoke;
+	text-align: center;
+  }
