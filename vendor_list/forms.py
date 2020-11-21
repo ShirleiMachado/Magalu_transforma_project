@@ -16,12 +16,12 @@ from .models import  Vendor_List, Product_List
 class Product_Form(forms.ModelForm):
 	item = forms.CharField(max_length=100,
 	widget=forms.TextInput(
-		attrs = {'placeholder': 'Insira um Item'}
+		attrs = {'placeholder': ''}
 	)
 	)
 	description = forms.CharField(max_length=100,
 	widget=forms.TextInput(
-		attrs = {'placeholder': 'Insira uma descricao'}
+		attrs = {'placeholder': ''}
 	)
 	)
 

@@ -52,3 +52,7 @@ def home(request):
 def about(request):
 	return render(request, "vendor_list/about.html")
 
+def courses(request):
+	return render(request, "vendor_list/courses.html")
+
+

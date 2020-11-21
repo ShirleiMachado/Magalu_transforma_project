@@ -2,55 +2,108 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Sua Lista de Produtos</title>
-
-		<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-
-		<!-- Bootstrap CSS -->
-		<link rel="stylesheet" href="{% static 'vendor_list/css/flatly.min.css' %}" />
-		<link rel="stylesheet" href="{% static 'vendor_list/css/styles.css' %}" />
-		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-
-
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="{% static 'vendor_list/css/index.css' %}" />
+        
 	</head>
 	<body>
+
+         <!-- Menu -->
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+            <img src="{% static 'vendor_list/assets/magalutransforma.png' %}" class="img-icon">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="http://127.0.0.1:8000/home" id="link">Home <span class="sr-only">(current)</span></a>
+
+            <a class="nav-item nav-link" href="#" id="link">Produtos</a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:8000/courses" id="link">Cursos</a>
+            <a class="nav-item nav-link" href="http://127.0.0.1:8000/about" id="link">Sobre nós</a>          
+
+            <a class="nav-item nav-link" href="http://127.0.0.1:8000/admin" id="link">Login</a>
+          </div>
+        </div>
+      </nav>
+
+
+      <!-- Banner apresentação -->
+      <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Produtos</h1>
+            <p>Uma plataforma realmente segura para manter o seu estoque de produtos</p>
+        </div>
+      </div>
 
 		<div class="container-fluid" id="wrapper">
 
 			<div class="row">
 				<div class="col-lg-4 col-lg-offset-4" id="content">
-					<h2>Sua Lista de Produtos <i class="fas fa-pencil-alt"></i>
+                    <h2>Sua Lista de Produtos <i class="fas fa-shopping-cart"></i>
+                    </h2>
 
-</h2>
 
-					<form action="{% url 'vendor_list-add' %}" method="POST" role="form">
-						{% csrf_token %}
-						<div class="form-group">
-							<div class="input-group">
-								{{ product_form.as_p}}
-							  <span class="input-group-btn">
-								  <button type="submit" class="btn btn-success" id="add-btn">Adicionar Produtos<i class="fas fa-check-circle"></i>
+                <form action="{% url 'vendor_list-add' %}" method="POST" role="form">
+					{% csrf_token %}
+					<div class="form-group">
+						<div class="input-group">
+                            <p id="title-produto">Nome do Produto:</p>
+                        </div> 
+                        <div class="input-group">
+                            {{ product_form.item}}
+                        </div>   
+                        <div class="input-group">
+                            <p id="title">Descrição:</p>
+                        </div> 
+                        <div class="input-group">
+                            {{ product_form.description}}
+                        </div> 
+                        <div class="input-group">
+                            <p id="title">Preço:</p>
+                        </div> 
+                        <div class="input-group">
+                            {{ product_form.price}}
+                        </div> 
+                        <div class="input-group">
+                            <p id="title">Estoque:</p>
+                        </div> 
+                        <div class="input-group">
+                            {{ product_form.stock}}
+                        </div> 
+                        <div class="input-group">
+                            <p id="title-vendor">Vendedora:</p>
+                        </div> 
+                        <div class="input-group">
+                            {{ product_form.seller}}
+                        </div>     
 
-</button>
-							  </span>
-							</div>
-						</div>
-					</form>
+                                
+					    <span class="input-group-btn">
+				    	  <button type="submit" class="btn btn-success" id="add-btn">Adicionar Produtos<i class="fas fa-check-circle"></i></button>
+                        </span>
+						
+			    	</div>
+				</form>
+                </div>
+            </div>
+            
 
-					
-				</div>
-			</div>
             <center>
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Item</th>
+                        <th>Nome do Produto</th>
                         <th>Descrição</th>
+                        <th>Preço</th>
+                        <th>Estoque</th>
                         <th>Ações</th>
                     </tr>
                 </thead>
@@ -68,6 +121,12 @@
                             {{product.description}}
                         </td>
                         <td>
+                            {{product.price}}
+                        </td>
+                        <td>
+                            {{product.stock}}
+                        </td>
+                        <td>
                             <a href="{% url 'vendor_list-inactive' product.id %}">Inativar</a>
                         </td>
                     </tr>
@@ -75,8 +134,23 @@
                 </tbody>
             </table>
         </center>
-		</div>
+        </div>
 
+<!-- Footer -->
+
+<footer class="page-footer">
+    <div class="footer-copyright text-center py-3">
+        © 2020 Copyright: Magalu Transforma</a>
+    </div>
+  </footer>
+
+
+  
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		
 	</body>
 </html>
