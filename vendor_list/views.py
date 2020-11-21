@@ -38,6 +38,12 @@ def inactive_item(request,item_id):
 	product.save()
 	return redirect('vendor_list-index')
 
+def activate_item(request,item_id):
+	product = Product_List.objects.get(pk=item_id) #pk é primary key pq é a posição do item
+	product.active = True
+	product.save()
+	return redirect('vendor_list-index')
+
 #def delete_item(request):
 #	Product_List.objects.filter(active__exact=True).delete()
 #	return redirect('vendor_list-index')

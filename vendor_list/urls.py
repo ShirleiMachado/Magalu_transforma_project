@@ -26,6 +26,7 @@ urlpatterns = [
     path('update/', views.update_product, name='vendor_list-update'),
 	path('see_all/', views.see_all, name='vendor_list-see_all'),
 	path('inactive_item/<int:item_id>/', views.inactive_item, name='vendor_list-inactive'),
+    path('activate_item/<int:item_id>/', views.activate_item, name='vendor_list-activate'),
 	#path('delete_all/', views.delete_all, name='vendor_list-delete_all'),
 ]
 		
