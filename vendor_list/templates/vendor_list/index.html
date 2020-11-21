@@ -15,7 +15,7 @@
 		<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 
 
-
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
 
 	</head>
 	<body>
@@ -32,7 +32,7 @@
 						{% csrf_token %}
 						<div class="form-group">
 							<div class="input-group">
-								{{ form.text }}
+								{{ product_form.as_p}}
 							  <span class="input-group-btn">
 								  <button type="submit" class="btn btn-success" id="add-btn">Adicionar Produtos<i class="fas fa-check-circle"></i>
 
@@ -42,38 +42,39 @@
 						</div>
 					</form>
 
-					<div class="row t10">
-						<div class="col-lg-12">
-							<div class="btn-toolbar">
-								<a href="{% url 'vendor_list-delete' %}">
-									<button type="button" class="btn btn-danger btn-block">
-										<i class="fas fa-trash-alt"></i> Delete Produtos Comprados
-									</button>
-								</a>
-								<a href="/delete_all">
-									<button type="button" class="btn btn-danger btn-block">
-										<i class="fas fa-trash-alt"></i> Deletar Tudo
-									</button>
-								</a>
-
-							</div>
-						</div>
-					</div>
-
-					<ul class="list-group t20">
-					{% for i in my_item %}
-						{% if i.complete %}
-							<li class="list-group-item todo-completed">{{i.item}}</li>
-						{% else %}
-							<a href="{% url 'vendor_list-bought' i.id %}"><li class="list-group-item">{{i.item}}</li></a>
-						{% endif %}
-					{% endfor %}
-						
-					</ul>
+					
 				</div>
 			</div>
-
-
+            <center>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Descrição</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {%for product in products%}
+                    <tr>
+                        <td>
+                            {%if product.active%}
+                            {{product.item}}
+                            {%else%}
+                            <s>{{product.item}}</s>
+                            {%endif%}
+                        </td>
+                        <td>
+                            {{product.description}}
+                        </td>
+                        <td>
+                            <a href="{% url 'vendor_list-inactive' product.id %}">Inativar</a>
+                        </td>
+                    </tr>
+                    {%endfor%}
+                </tbody>
+            </table>
+        </center>
 		</div>
 
 		

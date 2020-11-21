@@ -22,8 +22,9 @@ urlpatterns = [
     path('about/', views.about, name='vendor_list-about'),    
     path('products/', views.index, name='vendor_list-index'),
 	path('add/', views.add_new_item, name='vendor_list-add'),
-	path('bought/<item_id>', views.bought_item, name='vendor_list-bought'),
-	path('delete_item/', views.delete_item, name='vendor_list-delete'),
-	path('delete_all/', views.delete_all, name='vendor_list-delete_all'),
+    path('update/', views.update_product, name='vendor_list-update'),
+	path('see_all/', views.see_all, name='vendor_list-see_all'),
+	path('inactive_item/<int:item_id>/', views.inactive_item, name='vendor_list-inactive'),
+	#path('delete_all/', views.delete_all, name='vendor_list-delete_all'),
 ]
 		
